@@ -298,9 +298,9 @@
         return
       }
 
-      let timingFunction = CAMediaTimingFunction(controlPoints: 0.3, 0.5, 0.1, 1.0)
-      context[fromView] = [.timingFunction(timingFunction), .duration(0.3)]
-      context[toView] = [.timingFunction(timingFunction), .duration(0.3)]
+      let timingFunction =
+        context[fromView] = [.timingFunction(.standard), .duration(0.3)]
+      context[toView] = [.timingFunction(.standard), .duration(0.3)]
 
       let shadowState: [HeroModifier] = [.shadowOpacity(0.5),
                                          .shadowColor(.black),
